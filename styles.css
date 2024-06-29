@@ -1,0 +1,115 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(155, 150, 196), rgb(124, 124, 124));
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #181a1b;
+    margin: 10px 0;
+    padding: 10px;
+    width: 85%;
+    opacity: 95%;
+    /* background-color: rgb(185, 180, 180); */
+    /* background-image: linear-gradient(to right, rgb(161, 161, 163), rgb(108, 106, 106)); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.project:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(245, 243, 243);
+}
+
+.project p {
+    margin: 0;
+    font-size: 16px;
+    /* color: white; */
+}
+
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.navbar h3{
+    color: white;
+    text-align: left;
+    margin: 20px 150px 0 -0;
+    padding-right:1000px;
+}
+
+.project-text h3 {
+    margin: 0 0 50px 0;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.project-text p {
+    margin: 0 0 50px 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.material-icons{
+    margin: 3px 0 0 0;
+}
