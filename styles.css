@@ -16,6 +16,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navbar li a {
@@ -33,12 +34,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    flex-direction: column;
-    align-items: center;
     margin: 20px;
-
 }
 
 .project {
@@ -49,8 +47,6 @@ body {
     padding: 10px;
     width: 85%;
     opacity: 95%;
-    /* background-color: rgb(185, 180, 180); */
-    /* background-image: linear-gradient(to right, rgb(161, 161, 163), rgb(108, 106, 106)); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -88,6 +84,7 @@ body {
     flex-direction: column;
     width: 100%;
     color: white;
+    text-align: center;
 }
 
 .navbar h3{
@@ -112,4 +109,35 @@ body {
 
 .material-icons{
     margin: 3px 0 0 0;
+}
+
+@media (max-width: 768px) {  /* Mobile */
+    .navbar ul {
+        align-items: center;
+    }
+
+    .container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .navbar h3 {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .project {
+        width: 90%; 
+    }
+
+    .project-text p {
+        font-size: 14px; 
+    }
+
+    .slideshow-container {
+        max-width: 100%; 
+    }
+
+    .mySlides {
+        width: 100%; 
+    }
 }
